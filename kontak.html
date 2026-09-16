@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ardi - Kontak</title>
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            margin: 0;
+            padding: 40px 20px;
+            min-height: 100vh;
+            color: white;
+
+            background:
+                radial-gradient(circle at top left, #6335a8, transparent 35%),
+                radial-gradient(circle at bottom right, #00a6a6, transparent 40%),
+                #111827;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .logo img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 25px;
+            border: 3px solid white;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 35px;
+        }
+
+        .header h1 {
+            font-size: 40px;
+            margin: 0 0 10px;
+        }
+
+        .header p {
+            color: #d1d5db;
+        }
+
+        .content {
+            max-width: 1000px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 1fr 1.4fr;
+            gap: 25px;
+        }
+
+        .card {
+            padding: 28px;
+            border-radius: 20px;
+
+            background: rgba(255,255,255,0.12);
+            border: 1px solid rgba(255,255,255,0.2);
+
+            backdrop-filter: blur(15px);
+        }
+
+        .card h2 {
+            margin-top: 0;
+            margin-bottom: 25px;
+        }
+
+        .contact {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .icon {
+            min-width: 45px;
+            height: 45px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border-radius: 12px;
+            background: rgba(255,255,255,0.15);
+
+            font-size: 20px;
+        }
+
+        .contact p {
+            margin: 0 0 5px;
+            color: #cbd5e1;
+            font-size: 13px;
+        }
+
+        .contact a {
+            color: white;
+            text-decoration: none;
+            word-break: break-word;
+        }
+
+        .contact span {
+            line-height: 1.5;
+        }
+
+        .social {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .social a {
+            padding: 11px 16px;
+            border-radius: 12px;
+
+            background: rgba(255,255,255,0.12);
+
+            color: white;
+            text-decoration: none;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 7px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            margin-bottom: 18px;
+
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 10px;
+
+            outline: none;
+
+            background: rgba(0,0,0,0.2);
+            color: white;
+        }
+
+        textarea {
+            min-height: 130px;
+            resize: vertical;
+        }
+
+        input[type="file"] {
+            cursor: pointer;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+
+            border: none;
+            border-radius: 12px;
+
+            background: #6366f1;
+            color: white;
+
+            font-size: 16px;
+            font-weight: bold;
+
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #818cf8;
+        }
+
+        .note {
+            color: #9ca3af;
+            font-size: 12px;
+            margin-top: -10px;
+            margin-bottom: 18px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #94a3b8;
+            font-size: 13px;
+        }
+
+        @media (max-width: 750px) {
+            .content {
+                grid-template-columns: 1fr;
+            }
+
+            .header h1 {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="jpg.foto.jpg" alt="Logo Ardi">
+    </div>
+
+
+    <!-- JUDUL -->
+    <div class="header">
+        <h1>📩 Hubungi Ardi</h1>
+
+        <p>
+            Hubungi saya melalui informasi di bawah
+            atau kirim pesan melalui form.
+        </p>
+    </div>
+
+
+    <div class="content">
+
+        <!-- ================= KONTAK ================= -->
+
+        <div class="card">
+
+            <h2>📋 Informasi Kontak</h2>
+
+
+            <!-- EMAIL -->
+
+            <div class="contact">
+
+                <div class="icon">
+                    <i class="fa-solid fa-envelope"></i>
+                </div>
+
+                <div>
+                    <p>Email</p>
+
+                    <a href="mailto:ardiantowinata200811@gmail.com">
+                        ardiantowinata200811@gmail.com
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- INSTAGRAM -->
+
+            <div class="contact">
+
+                <div class="icon">
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+
+                <div>
+                    <p>Instagram</p>
+
+                    <a
+                        href="https://www.instagram.com/call_e_ardii"
+                        target="_blank">
+
+                        @call_e_ardii
+
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- TELEPON -->
+
+            <div class="contact">
+
+                <div class="icon">
+                    <i class="fa-solid fa-phone"></i>
+                </div>
+
+                <div>
+                    <p>Nomor Telepon</p>
+
+                    <a href="tel:087741685947">
+                        087741685947
+                    </a>
+                </div>
+
+            </div>
+
+
+            <!-- ALAMAT -->
+
+            <div class="contact">
+
+                <div class="icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                </div>
+
+                <div>
+                    <p>Alamat</p>
+
+                    <span>
+                        Jl Pergudangan Bandara Mas
+                        RT 002 RW 003,
+                        Kec. Neglasari,
+                        Kota Tangerang
+                    </span>
+                </div>
+
+            </div>
+
+
+            <!-- SOCIAL -->
+
+            <div class="social">
+
+                <a
+                    href="https://www.instagram.com/call_e_ardii"
+                    target="_blank">
+
+                    <i class="fa-brands fa-instagram"></i>
+                    Instagram
+
+                </a>
+
+
+                <a href="mailto:ardiantowinata200811@gmail.com">
+
+                    <i class="fa-solid fa-envelope"></i>
+                    Email
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= FORM ================= -->
+
+        <div class="card">
+
+            <h2>💬 Kirim Pesan</h2>
+
+
+            <form
+                action="https://formsubmit.co/ardiantowinata200811@gmail.com"
+                method="POST"
+                enctype="multipart/form-data">
+
+
+                <input
+                    type="hidden"
+                    name="_subject"
+                    value="Pesan Baru dari Website Ardi">
+
+
+                <input
+                    type="hidden"
+                    name="_captcha"
+                    value="false">
+
+
+                <!-- NAMA -->
+
+                <label for="name">
+                    Nama
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Masukkan nama kamu"
+                    required>
+
+
+                <!-- EMAIL -->
+
+                <label for="email">
+                    Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Masukkan email kamu"
+                    required>
+
+
+                <!-- SUBJEK -->
+
+                <label for="subject">
+                    Subjek
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Contoh: Pertanyaan / Tugas / Kerja sama"
+                    required>
+
+
+                <!-- LINK -->
+
+                <label for="link">
+                    🔗 Link (Opsional)
+                </label>
+
+                <input
+                    type="url"
+                    id="link"
+                    name="link"
+                    placeholder="https://contoh.com">
+
+
+                <!-- PESAN -->
+
+                <label for="message">
+                    Pesan
+                </label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    placeholder="Tulis pesan kamu di sini..."
+                    required></textarea>
+
+
+                <!-- FILE -->
+
+                <label for="attachment">
+                    📎 Dokumen / File (Opsional)
+                </label>
+
+                <input
+                    type="file"
+                    id="attachment"
+                    name="attachment"
+                    accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.zip">
+
+
+                <div class="note">
+                    Maksimal total ukuran file dalam satu pengiriman: 10 MB.
+                </div>
+
+
+                <!-- TOMBOL -->
+
+                <button type="submit">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Kirim Pesan
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+
+    <footer>
+        © 2026 Ardi — Dibuat dengan HTML & CSS
+    </footer>
+
+</body>
+</html>
